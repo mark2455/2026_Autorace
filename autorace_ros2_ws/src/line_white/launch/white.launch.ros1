@@ -1,0 +1,6 @@
+<launch>
+  <node name="white_detector" pkg="white_detector" type="white_detector_node" output="screen">
+    <!-- 파라미터 설정 -->
+    <param name="white_pixel_threshold" value="20000" />
+  </node>
+</launch>

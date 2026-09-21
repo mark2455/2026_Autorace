@@ -1,0 +1,3 @@
+float64 target_angle
+bool parking_test
+bool parking_possible

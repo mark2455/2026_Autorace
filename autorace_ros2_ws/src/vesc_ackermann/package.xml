@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>vesc_ackermann</name>
+  <version>0.1.0</version>
+  <description>ROS2 port of the customized Ackermann-to-VESC command converter from the AutoRace workspace.</description>
+  <maintainer email="noreply@example.com">AutoRace migration</maintainer>
+  <license>BSD-3-Clause</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>autorace_ros2_compat</depend>
+  <depend>rclcpp</depend>
+  <depend>ackermann_msgs</depend>
+  <depend>std_msgs</depend>
+  <exec_depend>ros2launch</exec_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

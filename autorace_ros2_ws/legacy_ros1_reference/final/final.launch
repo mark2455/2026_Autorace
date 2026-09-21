@@ -1,0 +1,10 @@
+<launch>
+    <node pkg="final" name="cam_node" type="combine_launch_cam.py">
+    <node pkg="final" name="lidar_node" type="combine_launch_lidar.py">
+</launch>
+
+    
+    <include file="$(find final)/launch/union.launch"/>
+    <include file="$(find racecar)/launch/teleop.launch"/>
+    <include file="$(find obstacle_detector)/launch/nodelets.launch"/>
+    <include file="$(find aruco_detect)/launch/aruco_detect.launch" />

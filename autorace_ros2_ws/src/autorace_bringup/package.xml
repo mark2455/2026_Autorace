@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>autorace_bringup</name>
+  <version>0.1.0</version>
+  <description>ROS2 Humble bringup for the migrated AutoRace 2024 node graph.</description>
+  <maintainer email="noreply@example.com">AutoRace migration</maintainer>
+  <license>BSD-3-Clause</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>gray_detector</exec_depend>
+  <exec_depend>red_detector</exec_depend>
+  <exec_depend>white_detector</exec_depend>
+  <exec_depend>lane_detector_jeju_2</exec_depend>
+  <exec_depend>morai_lane</exec_depend>
+  <exec_depend>waypoint_maker</exec_depend>
+  <exec_depend>waypoint_follower</exec_depend>
+  <exec_depend>asw_lidar</exec_depend>
+  <exec_depend>vesc_ackermann</exec_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

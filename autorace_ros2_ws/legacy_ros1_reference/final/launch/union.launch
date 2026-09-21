@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="final" name="lidar_node" type="c_lidar.py"/>
+    <node pkg="final" name="cam_node" type="c_cam.py"/>
+    <node pkg="final" name="velocity_node" type="c_velocity.py"/>
+</launch>

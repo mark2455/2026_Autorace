@@ -1,0 +1,6 @@
+<launch>
+  <node name="gray_detector" pkg="gray_detector" type="gray_detector_node" output="screen">
+    <!-- 파라미터 설정 -->
+    <param name="gray_pixel_threshold" value="40000" />
+  </node>
+</launch>

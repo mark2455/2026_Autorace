@@ -1,0 +1,49 @@
+<launch>
+	<node pkg="lane_detector_jeju_2" type="lane_detector_jeju_2" name="lane_detector_jeju_2" output='screen'>
+		<param name="resize_width" value="1280" />
+		<param name="resize_height" value="720" />
+
+		<!-- 1. Binary threshold 시흥-->
+		<param name="gray_bin_thres" value="190" />
+		<!--param name="hsv_h_bin_thres" value="180" />
+		<param name="hsv_s_bin_thres" value="150" />
+		<param name="hsv_v_bin_thres" value="255" /-->
+	
+
+		<!-- 1. Binary threshold 
+		<param name="gray_bin_thres" value="180" />
+		<param name="hsv_s_bin_thres" value="200" />
+		<param name="hsv_h_bin_thres" value="180" />
+		<param name="hsv_v_bin_thres" value="255" />
+		-->
+		
+
+		<!-- 2. Detect line -->
+		<!-- 원인은 모르겠으니 detect_line_count를 3개 이상으로 늘리면 조향이 둔감해지는 경향이 있음 -->
+		<param name="detect_line_count" value="1" />
+		<param name="detect_y_offset_1" value="60" />
+		<!-- param name="detect_y_offset_2" value="ROI" /-->
+
+		<!-- 3. Detect offset -->
+		<param name="left_detect_offset" value="0" />
+		<param name="right_detect_offset" value="0" />
+
+		<!-- 4. Control hardware -->
+		<!-- rc car -->
+		<!--param name="steer_max_angle" value="45" /-->
+		<!--param name="throttle" value="1515" /-->
+		<!--remap from="/crosswalk_stop/write" to="write" /-->
+
+		<!-- scale platform -->
+		<param name="steer_max_angle" value="15" />
+		<param name="throttle" value="0.5" />
+		<remap from="/lane_detector/ackermann" to="ackermann" />
+
+		<!-- 5. Control factor -->
+		<!-- yaw_error *= yaw_factor / 100차량회전각도 --> 
+		<param name="yaw_factor" value="45" />
+
+		<!-- lateral_error *= lateral_factor/ 100차량좌우편향(중심) --> 
+		<param name="lateral_factor" value="75" />
+	</node>
+</launch>

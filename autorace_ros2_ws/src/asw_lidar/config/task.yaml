@@ -1,0 +1,116 @@
+Task1: #cone_track parameter
+    voxel_size: 0.08
+
+    min_x_: -0
+    max_x_: 2.0
+
+    min_y_: -0.6
+    max_y_: 0.6
+
+    tolerance: 0.1
+    cluster_size_min: 1
+    cluster_size_max: 50
+
+    cone_dist: 0.3
+    dist_offset: 0.8
+
+
+Task2: #tunnel parameter
+    voxel_size: 0.1
+
+    min_x_: 0.0
+    max_x_: 5.0
+
+    min_y_: -2.0
+    max_y_: 2.0
+
+    cone_dist_: 0.2
+    chan_dist_offset: 0.35
+    dist_offset: 1.3
+    outcourse_offset: 0.0
+    straight_count_param: 18
+    straight_angle: -8
+    ratio_line: 0.15
+    ratio_line2: 0.35 # 탈출할 때 직진 조향을 위한 flag
+    done_count_param: 5
+    corner_speed: 0.3
+    LD: 0.5
+
+Task3: #static parameter
+    voxel_size: 0.03
+
+    min_x_: 0.13
+    max_x_: 0.65
+
+    min_y_: -0.1
+    max_y_: 0.1
+
+    tolerance: 0.2
+
+    cluster_size_min: 4
+    cluster_size_max: 500
+
+# Task3: #static parameter
+#     voxel_size: 0.03
+
+#     min_x_: 0.13
+#     max_x_: 1.1
+
+#     min_y_: -0.35
+#     max_y_: 0.35
+
+#     tolerance: 0.2
+
+#     cluster_size_min: 4
+#     cluster_size_max: 500
+
+Task4: #dynamic parameter
+    voxel_size: 0.01
+
+    min_x_: 0.0
+    max_x_: 0.8
+
+    min_y_: -0.2
+    max_y_: 0.2
+
+    tolerance: 0.3
+
+    cluster_size_min: 2
+    cluster_size_max: 500
+
+
+Task5: #tunnel parameter
+    voxel_size: 0.06
+
+    min_x_: 0.0
+    max_x_: 2.0
+
+    min_y_: -0.5
+    max_y_: 0.5
+
+    cone_dist_: 0.2
+    chan_dist_offset: 0.35
+    dist_offset: 1.3
+    outcourse_offset: 0.0
+    straight_count_param: 18
+    straight_angle: -8
+    ratio_line: 0.15
+    ratio_line2: 0.35 # 탈출할 때 직진 조향을 위한 flag
+    done_count_param: 5
+    corner_speed: 0.2
+    LD: 0.5
+    
+
+Task6: #아크릴 parameter
+    voxel_size: 0.01
+
+    min_x_: 0.0
+    max_x_: 1.8
+
+    min_y_: -0.2
+    max_y_: 0.2
+
+    tolerance: 0.3
+
+    cluster_size_min: 2
+    cluster_size_max: 500
